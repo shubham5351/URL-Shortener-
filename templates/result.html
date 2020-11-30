@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL Shortener</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<header>
+	<nav class="navbar navbar-default" id="title">
+		<h1><a href="{{ url_for('index') }}">URL Shortener </a></h1>
+	</nav>
+</header>
+<body id="main">
+<div class="container" id="res" style="text-align:center;">
+<h1 style="color:white;">Your Shortest URL is Ready Click It:</h1>
+<h2><a href="{{shorturl}}" style="text-decoration:none;">{{ shorturl }}</a></h2>
+</div>
+<footer>
+	<h4>Made by</h4>
+	<h5>Shubham Pawar</h5>	
+</footer>
+</body>
+</html>

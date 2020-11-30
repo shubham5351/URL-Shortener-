@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>URL Shortener</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<header>
+	<nav class="navbar navbar-default" id="title">
+		<h1><a href="{{ url_for('index')}}">URL Shortener</a></h1>
+	</nav>
+</header>
+<body id="main">
+<form action="{{ url_for('result') }}" method="post">
+	<div id="in">
+	<label><h3 style="font-weight: bolder;">Enter URL:</h3></label><br>
+	</div>
+	<div id="in">
+    <input type="text" id="uname" name="urlname" autofocus placeholder="Only Valid url *" required>
+	</div>
+	<div id="in">
+	<button class="btn btn-primary btn-lg">Submit</button>
+	</div>
+</form>	
+<footer>
+	<h4>Made by</h4>	
+	<h5>Shubham Pawar</h5>	
+</footer>
+</body>
+</html>
